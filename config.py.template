@@ -4,8 +4,8 @@ Copy to config.py after filling in values.
 """
 
 # runtime configurations
-bucket  = <bucketname>
-default_to_email = <email_to_receive_notifications_when_none_configured>
+bucket  = injenia-billing-report
+default_to_email = francesco.desimone@injenia.it
 
 
 # ** OPTIONAL**
@@ -21,13 +21,13 @@ use_remote_gcs_when_local = False
 # To connect to remote GCS rather then remote, create a service account,
 #
 # similar to abc123abc123@developer.gserviceaccount.com
-service_account = '<service-account>'
+service_account = '1064003256732-6tn0pelot96sv9781fkr0f7kbeqc27n8@developer.gserviceaccount.com'
 #
 # downloading the private key and changing config.py to reference the private
 # key. It's necessary to change .p12 file into a pem file with the command:
 #
-# > openssl pkcs12 -in abc123abc123-privatekey.p12 -nodes -nocerts | openssl rsa > abc123abc123-privatekey.pem
+# > openssl pkcs12 -in GoogleBillingAccount-e5f478bdefd4.p12 -nodes -nocerts | openssl rsa > GoogleBillingAccount-e5f478bdefd4.pem
 #
 # The password to the key file is "notasecret".
 # private key file in local filesystem like 'ABC123-privatekey.pem'
-private_key_pem_file =  '<private_key_pem_file>'
+private_key_pem_file =  'GoogleBillingAccount-e5f478bdefd4.pem'

@@ -1,6 +1,6 @@
-application: <enter-application-id>
+application: our-episode-111216
 module: billing-export
-version: 1
+version: test
 runtime: python27
 api_version: 1
 threadsafe: true
